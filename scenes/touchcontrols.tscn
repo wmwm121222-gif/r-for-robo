@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://657yvb3360sr"]
+
+[ext_resource type="Texture2D" uid="uid://c1u6xa1untmxc" path="res://assets/Sprite-0001.png" id="1_67tn3"]
+[ext_resource type="Texture2D" uid="uid://j5ykbr4jrjhx" path="res://Sprite-0001.png" id="2_by1k7"]
+[ext_resource type="Texture2D" uid="uid://3ws85feuvfuj" path="res://assets/Sprite-0002.png" id="3_6ai0u"]
+[ext_resource type="Texture2D" uid="uid://bwqlbb1xp6dwa" path="res://Sprite-0003.png" id="4_ftqal"]
+
+[node name="touchcontrols" type="CanvasLayer"]
+
+[node name="right" type="TouchScreenButton" parent="."]
+self_modulate = Color(1, 1, 1, 0.72549)
+position = Vector2(281, 790)
+scale = Vector2(7, 7)
+texture_normal = ExtResource("1_67tn3")
+action = "ui_right"
+
+[node name="left" type="TouchScreenButton" parent="."]
+self_modulate = Color(1, 1, 1, 0.72549)
+position = Vector2(160, 963)
+rotation = 3.14159
+scale = Vector2(7, 7)
+texture_normal = ExtResource("2_by1k7")
+action = "ui_left"
+
+[node name="jump" type="TouchScreenButton" parent="."]
+self_modulate = Color(1, 1, 1, 0.72549)
+position = Vector2(1220, 849)
+scale = Vector2(7, 7)
+texture_normal = ExtResource("3_6ai0u")
+action = "ui_accept"
+
+[node name="dash" type="TouchScreenButton" parent="."]
+self_modulate = Color(1, 1, 1, 0.72549)
+position = Vector2(1448, 742)
+scale = Vector2(7, 7)
+texture_normal = ExtResource("4_ftqal")
+action = "ui_dash"
